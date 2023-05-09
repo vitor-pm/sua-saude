@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TelaExercicios">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/academia"
+            android:layout_width="275dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="536dp"
+            android:background="@drawable/cart_background"
+            android:src="@drawable/academia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Academia"
+            android:textColor="@color/a3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/academia"
+            app:layout_constraintEnd_toEndOf="@+id/academia"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="@+id/academia"
+            app:layout_constraintTop_toTopOf="@+id/academia"
+            app:layout_constraintVertical_bias="0.171" />
+
+        <ImageView
+            android:id="@+id/artes_marciais"
+            android:layout_width="275dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="700dp"
+            android:background="@drawable/cart_background"
+            android:src="@drawable/artes_marciais"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="26dp"
+            android:text="Artes Marciais"
+            android:textColor="@color/a3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/artes_marciais"
+            app:layout_constraintEnd_toEndOf="@+id/artes_marciais"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/artes_marciais"
+            app:layout_constraintTop_toTopOf="@+id/artes_marciais"
+            app:layout_constraintVertical_bias="0.13999999" />
+
+        <ImageView
+            android:id="@+id/yoga"
+            android:layout_width="275dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="372dp"
+            android:background="@drawable/cart_background"
+            android:src="@drawable/yoga"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="154dp"
+            android:layout_height="26dp"
+            android:text="@string/Yoga"
+            android:textAlignment="center"
+            android:textColor="@color/a3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/yoga"
+            app:layout_constraintEnd_toEndOf="@+id/yoga"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/yoga"
+            app:layout_constraintTop_toTopOf="@+id/yoga"
+            app:layout_constraintVertical_bias="0.289" />
+
+        <ImageView
+            android:id="@+id/icone_ao_ar_livre"
+            android:layout_width="275dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/cart_background"
+            android:src="@drawable/aoarlivre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_ao_ar_livre"
+            android:layout_width="150dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="164dp"
+            android:text="@string/text_aoarlivre"
+            android:textAlignment="center"
+            android:textColor="@color/a3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/icone_ao_ar_livre"
+            app:layout_constraintEnd_toEndOf="@+id/icone_ao_ar_livre"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/icone_ao_ar_livre"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icone_em_casa"
+            android:layout_width="275dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="212dp"
+            android:background="@drawable/cart_background"
+            android:src="@drawable/emcasa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_em_casa"
+            android:layout_width="189dp"
+            android:layout_height="25dp"
+            android:text="@string/text_emcasa"
+            android:textAlignment="center"
+            android:textColor="@color/a3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/icone_em_casa"
+            app:layout_constraintEnd_toEndOf="@+id/icone_em_casa"
+            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintStart_toStartOf="@+id/icone_em_casa"
+            app:layout_constraintTop_toTopOf="@+id/icone_em_casa"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/voltar"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="356dp"
+            app:layout_constraintBottom_toTopOf="@+id/icone_ao_ar_livre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/left" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

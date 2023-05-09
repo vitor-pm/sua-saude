@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".TelaIMC">
+
+
+    <ImageView
+        android:id="@+id/imc"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lg" />
+
+    <TextView
+        android:id="@+id/text_calculeseuIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/text_calculeseuIMC"
+        android:textColor="@color/a5"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imc" />
+
+    <EditText
+        android:id="@+id/edit_peso"
+        style="@style/Edit_Text"
+        android:layout_marginTop="68dp"
+        android:hint="Digite seu peso:"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/imc"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@id/imc"
+        app:layout_constraintTop_toBottomOf="@id/imc" />
+
+    <EditText
+        android:id="@+id/edit_altura"
+        style="@style/Edit_Text"
+        android:layout_marginTop="16dp"
+        android:hint="Digite sua altura:"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@id/edit_peso"
+        app:layout_constraintTop_toBottomOf="@id/edit_peso" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botaocalcular"
+        style="@style/botaocalcular"
+        android:layout_marginTop="44dp"
+        android:onClick="calcularImc"
+        android:text="@string/text_calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_altura" />
+
+    <ImageView
+        android:id="@+id/voltar"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="356dp"
+        app:layout_constraintBottom_toTopOf="@+id/imc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/left" />
+
+    <TextView
+        android:id="@+id/text_resultado"
+        style="@style/Edit_Text"
+        android:layout_marginTop="16dp"
+        android:hint="Resultado"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botaocalcular" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
